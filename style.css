@@ -103,6 +103,10 @@ hr {
 #conteudo {
     background-color: #f1f1f1;
     padding: 0 100px;
+    width: 100%;
+    /* Certifique-se de que a largura esteja definida */
+    overflow-wrap: break-word;
+    /* Força quebra de linha se o texto for muito longo */
 }
 
 #conteudo h1,
@@ -114,13 +118,16 @@ hr {
     padding: 15px 0;
 }
 
-.coluna-conteudo p {
-    padding-top: 20px;
+/* .coluna-conteudo p {
+    max-width: 100%;
+    /* Garantir que os parágrafos não ultrapassem a largura da div */
+word-wrap: break-word;
+/* Quebra o texto longo */
 }
 
-
 #conteudo h2 {
-    width: 700px;
+    width: 850px;
+
 }
 
 .coluna-conteudo {
@@ -131,6 +138,7 @@ hr {
 .colunas-experiencias,
 .colunas-sobre {
     padding-bottom: 40px;
+
 }
 
 
@@ -143,8 +151,8 @@ hr {
 .colunas-experiencias,
 .colunas-complemento {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
 }
 
 /* .coluna-esquerda ul li,
