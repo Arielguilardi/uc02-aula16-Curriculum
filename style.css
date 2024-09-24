@@ -5,22 +5,22 @@
     box-sizing: border-box;
 }
 
+
 * {
     margin: 0;
     padding: 0;
 }
 
+
 body,
 h1,
 h2,
 h3,
-h4,
 p,
 figure,
 blockquote,
 dl,
-dd,
-strong {
+dd {
     margin-block-end: 0;
 }
 
@@ -37,6 +37,23 @@ body {
 hr {
     margin: 30px 0;
 }
+
+
+
+#conteudo h1,
+#conteudo h2,
+#conteudo h3,
+#conteudo h4 {
+    color: #004ADB;
+    padding: 15px 0;
+    text-align: left;
+
+}
+
+#conteudo h3 {
+    height: 80px;
+}
+
 
 #cabecalho {
     background-color: #004ADB;
@@ -58,7 +75,7 @@ hr {
 #cabecalho ul {
     font-size: 20px;
     text-align: right;
-    justify-items: right;
+    /* justify-items: right;    Não está sendo utilizado*/
 }
 
 #cabecalho img {
@@ -82,6 +99,7 @@ hr {
     color: white;
 }
 
+
 #contatos a:hover {
     color: black;
 }
@@ -99,16 +117,10 @@ hr {
     padding: 0 100px;
 }
 
-#conteudo h1,
-#conteudo h2,
-#conteudo h3,
-#conteudo strong {
-    color: #004ADB;
-    padding: 15px 0;
-}
-
 .coluna-conteudo {
-    padding: 30px 0;
+    /* padding: 30px 0; */
+    min-height: 350px;
+    text-align: justify;
 }
 
 .colunas-experiencias,
@@ -121,4 +133,8 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
+}
+
+#colunas-complemento ul li {
+    list-style-position: inside;
 }
