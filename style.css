@@ -38,8 +38,6 @@ hr {
     margin: 30px 0;
 }
 
-
-
 #conteudo h1,
 #conteudo h2,
 #conteudo h3,
@@ -47,13 +45,11 @@ hr {
     color: #004ADB;
     padding: 15px 0;
     text-align: left;
-
 }
 
 #conteudo h3 {
     height: 80px;
 }
-
 
 #cabecalho {
     background-color: #004ADB;
@@ -135,6 +131,99 @@ hr {
     gap: 5%;
 }
 
-#colunas-complemento ul li {
+.colunas-complemento ul li {
     list-style-position: inside;
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    hr {
+        margin: 15px 0;
+    }
+
+    #cabecalho h1 {
+        font-size: 50px;
+    }
+
+    #titulos,
+    #titulos h1,
+    #titulos h2 {
+        width: auto;
+    }
+
+    #contatos a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #contatos a:hover {
+        color: black;
+    }
+
+    #cabecalho,
+    #contatos ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #cabecalho img {
+        display: flex;
+    }
+
+    #imagem,
+    #titulos,
+    #contatos {
+        padding: 10px 0;
+    }
+
+    #contatos {
+        padding-bottom: 20px;
+    }
+
+    #conteudo {
+        background-color: #f1f1f1;
+        padding: 0 50px;
+    }
+
+    .colunas-sobre {
+        padding: 0;
+    }
+
+    #conteudo h1,
+    #conteudo h2,
+    #conteudo h3 {
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .colunas-experiencias {
+        padding: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .coluna-conteudo {
+        /* padding: 30px 0; */
+        min-height: auto;
+        text-align: justify;
+    }
+
+    .colunas-experiencias {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #cabecalho h1 {
+        font-size: 35px;
+    }
+
+    .colunas-experiencias,
+    .colunas-complemento {
+        display: block;
+    }
 }
